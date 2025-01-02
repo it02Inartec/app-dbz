@@ -1,0 +1,15 @@
+<h1>Main Page work!</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <dbz-list
+            [characterList]="characters"
+            (deleteById)="onDeleteCharacter($event)"></dbz-list>
+    </div>
+
+    <div class="col">
+        <dbz-add-character
+            (saveCharacter)="onAddNewCharacter($event)"></dbz-add-character>
+    </div>
+</div>
